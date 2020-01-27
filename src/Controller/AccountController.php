@@ -190,7 +190,7 @@ class AccountController extends AbstractController
      */
     public function bookings()
     {
-        return $this->render('user/bookings.html.twig');
+        return $this->render('account/bookings.html.twig');
 
     }
 }
