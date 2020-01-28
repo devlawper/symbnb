@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <title>SymBnb - {% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <title>Admin SymBnb - {% block title %}Welcome!{% endblock %}</title>
+{#        <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/app.css">
-        <link rel="stylesheet" href="/css/admin.css">
+        <link rel="stylesheet" href="/css/admin.css">#}
+        {{ encore_entry_link_tags('app') }}
         {% block stylesheets %}{% endblock %}
     </head>
 
@@ -18,9 +19,10 @@
 
         {% include 'admin/partials/footer.html.twig' %}
 
-        <script src="/js/jquery.min.js"></script>
+{#        <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>#}
+        {{ encore_entry_script_tags('app') }}
         <script src="https://kit.fontawesome.com/db3104123b.js" crossorigin="anonymous"></script>
         {% block javascripts %}{% endblock %}
     </body>
